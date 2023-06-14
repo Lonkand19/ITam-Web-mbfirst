@@ -6,7 +6,7 @@
 }
 body{
  background-color: #444;
- font-family: "BPG Rioni", sans-serif;
+ font-family: "BPG Rioni";
  width: 100vw;
  min-height: 100vh;
  display: flex;
@@ -29,10 +29,6 @@ main{
         justify-content: center;
         align-items: center;
         padding: 10% 0;
-        &:hover{
-            color: whitesmoke; 
-            box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
-        }
         & h2{
             color: #5C5C5C;
             margin: 5px 0 5px 0;
@@ -44,6 +40,8 @@ main{
         width: 80vw;
         margin-top: -120px;
         display: none;
+        padding: 15px 10px 10px 10px;
+        text-align: center;
     }
 }
 
