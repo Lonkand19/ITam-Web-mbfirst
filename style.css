@@ -42,6 +42,12 @@ main section h2 {
   margin: 5px 0 5px 0;
   font-size: 20px;
 }
+main .text {
+  background-color: #FFF;
+  width: 80vw;
+  margin-top: -120px;
+  display: none;
+}
 
 .custom {
   color: #5C5C5C;
