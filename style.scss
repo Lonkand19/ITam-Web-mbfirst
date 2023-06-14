@@ -43,6 +43,20 @@ main{
         padding: 15px 10px 10px 10px;
         text-align: center;
     }
+    & footer{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        & a{
+            margin-left: 10px;
+            color: #FFF;
+            text-decoration: none;
+            &:hover{
+                text-decoration:underline;
+                color: #3f0b0b;
+            }
+            }
+    }
 }
 
 

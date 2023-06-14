@@ -46,6 +46,20 @@ main .text, main .text1, main .text2, main .text3 {
   padding: 15px 10px 10px 10px;
   text-align: center;
 }
+main footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+main footer a {
+  margin-left: 10px;
+  color: #FFF;
+  text-decoration: none;
+}
+main footer a:hover {
+  text-decoration: underline;
+  color: #3f0b0b;
+}
 
 .custom {
   color: #5C5C5C;
