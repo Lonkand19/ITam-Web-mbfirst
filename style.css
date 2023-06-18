@@ -32,6 +32,7 @@ main section {
   justify-content: center;
   align-items: center;
   padding: 10% 0;
+  transition: box-shadow 0.5s, color 0.5s;
 }
 main section h2 {
   color: #5C5C5C;
@@ -48,8 +49,9 @@ main section:hover {
 main section:hover .custom, main section:hover h2 {
   color: #FFF;
 }
-main section:hover .text {
+main section:hover .text, main section:hover .text1, main section:hover .text2, main section:hover .text3 {
   display: block;
+  transition: 0.5s;
 }
 main .text, main .text1, main .text2, main .text3 {
   background-color: #FFF;

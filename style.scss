@@ -29,6 +29,7 @@ main{
         justify-content: center;
         align-items: center;
         padding: 10% 0;
+        transition: box-shadow 0.5s, color 0.5s;
         & h2{
             color: #5C5C5C;
             margin: 5px 0 5px 0;
@@ -51,8 +52,9 @@ main{
      .custom, h2{
         color: #FFF;
      }
-            .text {
+            .text, .text1, .text2, .text3 {
                 display: block;
+                transition:  0.5s;
             }
         }
     }
@@ -64,9 +66,7 @@ main{
         padding: 15px 10px 10px 10px;
         text-align: center;
         margin-bottom: 100px;
-        
         transform: translateY(150px);
-        
     }
     & footer{
         display: flex;
