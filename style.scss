@@ -52,13 +52,13 @@ main{
     0 0 50px #fff,
     -10px 0 80px #f0f,
     10px 0 80px #0ff;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s ease;
      .custom, h2{
         color: #FFF;
      }
             .text, .text1, .text2, .text3 {
                 display: block;
-                transition: display 0.5s;
+             transition: opacity 0.5s;
             }
         }
     }
@@ -126,5 +126,34 @@ main{
                                   }
                         }
 }
+@media screen and (min-width:1440px){
+    main{
+        & .container{
+            gap: 75px;
+        
+        
+         & section{
+            max-height: 200px;
+         }
+        
+    }
+    & footer{
+        margin-top: 150px;
+     }
+    
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
