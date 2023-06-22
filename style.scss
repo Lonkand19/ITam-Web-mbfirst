@@ -25,6 +25,9 @@ main{
         margin: 5% 0;
         background: #333;
         width: 80vw;
+        appearance: none;
+        -webkit-appearance: none;
+        -webkit-box-shadow:0 20px 50px rgba(0,0,0,.8);
         box-shadow: 0 20px 50px rgba(0,0,0,.8);
         display: flex;
         flex-direction: column;
@@ -32,6 +35,8 @@ main{
         align-items: center;
         padding: 10% 0;
         transition: box-shadow 0.5s, color 0.5s;
+        transform: translateY(0px);
+        position: relative;
         
         & h2{
             color: #5C5C5C;
@@ -43,6 +48,25 @@ main{
             padding-top: 10px;
         }
         &:hover {
+            appearance: none;
+            -webkit-appearance: none;
+            margin: 15% 0;
+            -webkit-box-shadow: inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff;
+            -moz-box-shadow:inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff;
             box-shadow:
     inset 0 0 60px whitesmoke,
     inset 20px 0 80px #f0f,
@@ -52,26 +76,32 @@ main{
     0 0 50px #fff,
     -10px 0 80px #f0f,
     10px 0 80px #0ff;
+    transform: translateY(-50px);
     transition: box-shadow 0.5s ease;
+    transition: transform 0.3s ease;
      .custom, h2{
         color: #FFF;
      }
             .text, .text1, .text2, .text3 {
                 display: block;
-             transition: opacity 0.5s;
+             transform: translateY(80px);
+             opacity: 1;
+             transition:  transform 0.3s ease;
+             padding-bottom: 50px;
             }
         }
     }
     .text,.text1,.text2,.text3 {
         background-color: #FFF;
         width: 80vw;
-        margin-top: -120px;
-        display: none;
-        padding: 15px 10px 10px 10px;
+        margin-top: 170px;
+        opacity: 0;
+        padding: 10px 10px 15px 10px;
         text-align: center;
         margin-bottom: 100px;
-        transform: translateY(150px);
         transition: transform 0.5s;
+        position: absolute;
+        
     }
 }
     & footer{
@@ -102,14 +132,19 @@ main{
     color: #000000;
     font-size: 20px;
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:700px){
     main{
         & .container{
             display: grid;
         grid-template-columns: 45% 45%;
         gap: 50px;
     & section {
-        width: 45vw;}
+        width: 45vw;
+    &:hover {
+        .text, .text1, .text2, .text3 {
+            transform: translateY(70px);
+        }
+    }}
     .text, .text1, .text2, .text3 {
         width: 45vw;}
                                   }
@@ -126,15 +161,28 @@ main{
                                   }
                         }
 }
-@media screen and (min-width:1440px){
+@media (min-width:1400px){
     main{
         & .container{
             gap: 75px;
+            display: flex;
+            flex-direction: row;
+            
         
         
          & section{
             max-height: 200px;
+            width: 20vw;
+            padding: 5% 0;
+            &:hover{
+                padding: 3% 0;
+                .text, .text1, .text2, .text3 {
+                    transform: translateY(80px);
+                }
+            }
          }
+         .text, .text1, .text2, .text3 {
+            width: 20vw;}
         
     }
     & footer{
